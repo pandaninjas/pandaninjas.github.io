@@ -1,0 +1,158 @@
+.body {
+  padding: 60px;
+  text-align: center;
+  color: #4a4a4a;
+  background-color: white;
+  font-size: 30px;
+}
+
+.top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10rem;
+  margin-bottom: 50px;
+}
+
+.pfp {
+  clip-path: circle();
+}
+
+body {
+  /* Remove body margins */
+  margin: 0;
+  font-display: swap;
+  font-family: "Noto Sans", sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #d84f4f;
+  color: #f2f2f2;
+  vertical-align: top;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 100;
+  font-weight: 300;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:link {
+  color: white;
+}
+
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+.content {
+  padding: 60px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+}
+
+.content paragraph {
+  color: white;
+  font-size: 18px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.divider {
+  flex-grow: 1;
+  border-bottom: 1px solid black;
+  margin: 0;
+  display: flex;
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: inherit;
+}
+
+@media (prefers-color-scheme: dark) {
+  .body {
+    padding: 60px;
+    text-align: center;
+    color: white;
+    background-color: rgb(32, 32, 32);
+    font-size: 30px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #d84f4f;
+    color: #f2f2f2;
+    vertical-align: top;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+    font-weight: 300;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .topnav a:hover {
+    background-color: #ddd;
+    color: white;
+  }
+
+  .content {
+    padding: 60px;
+    text-align: center;
+    color: white;
+    font-size: 14px;
+  }
+
+  .content paragraph {
+    color: white;
+    font-size: 18px;
+  }
+  .divider {
+    flex-grow: 1;
+    border-bottom: 1px solid white;
+    margin: 0;
+    display: flex;
+  }
+
+  a:link {
+    color: white;
+  }
+
+  a:visited {
+    color: inherit;
+  }
+}

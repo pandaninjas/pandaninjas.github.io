@@ -97,6 +97,10 @@ a:visited {
 }
 
 @media (prefers-color-scheme: dark) {
+  html {
+    background-color: rgb(32, 32, 32);
+  }
+
   .body {
     padding: 60px;
     text-align: center;

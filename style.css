@@ -21,7 +21,6 @@
 body {
   /* Remove body margins */
   margin: 0;
-  font-display: swap;
   font-family: "Noto Sans", sans-serif;
 }
 

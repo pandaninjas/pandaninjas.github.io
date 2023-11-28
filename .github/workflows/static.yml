@@ -33,18 +33,13 @@ jobs:
         uses: actions/checkout@v3
       - name: Setup Pages
         uses: actions/configure-pages@v3
-      - name: Setup minify
-        run: mkdir ../build
-      - name: Minify Site
-        uses: jossydevers/minify-js@v1.0.0
-        with:
-          directory: '.'
-          output: '../build'
+      - name: Minify
+        run: npm install -g minify && mkdir build && cp * build/ && minify index.html > build/index.html && minify style.css > build/style.css 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
           # Upload entire repository
-          path: '../build'
+          path: './build'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2

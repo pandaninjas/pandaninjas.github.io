@@ -34,7 +34,7 @@ jobs:
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Minify
-        run: npm install -g minify && mkdir build && cp * build/ && minify index.html > build/index.html && minify style.css > build/style.css 
+        run: npm install -g minify && mkdir build && cp * build/ || minify index.html > build/index.html && minify style.css > build/style.css 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
